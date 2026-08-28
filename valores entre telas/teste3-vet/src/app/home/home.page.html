@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title style="text-align: center;">
+      Teste 3 - Valores entre Telas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="padding: 20px;">
+    <ion-item>
+      <ion-input labelPlacement="floating" type="text" style="max-width: 200px;" label="Nome:" placeholder="nome" [(ngModel)]="nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="floating" type="email" style="max-width: 200px;" label="Email:" placeholder="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input labelPlacement="floating" type="text" style="max-width: 200px;" label="Telefone:" placeholder="telefone" [(ngModel)]="telefone"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" style="max-width: 100px;" (click)="abrirTela()">Cadastrar</ion-button>
+  </div>
+</ion-content>
