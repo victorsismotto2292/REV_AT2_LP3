@@ -1,0 +1,7 @@
+{
+  "name": "teste1-vet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
