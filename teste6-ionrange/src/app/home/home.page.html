@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      Teste 6 - Ion Range (exercícios)
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="teste6" style="padding: 20px">
+    <ion-alert  trigger="msn" header="Resultado" message="{{msn}}" [buttons]="alertButtons"></ion-alert>
+
+    <ion-input type="number" labelPlacement="floating" label="Digite o valor da conta" placeholder="Apenas números" style="max-width: 200px;" [(ngModel)]="conta"></ion-input>
+
+    <ion-item-divider></ion-item-divider>
+
+    <p>Ajuste o valor da gorjeta</p>
+    <ion-range (ionChange)="gorjeta($event)" [ticks]="true" [snaps]="true" [min]="0" [max]="30" style="max-width: 300px;" labelPlacement="end" label="{{vgorjeta}}%" [(ngModel)]="vgorjeta"></ion-range>
+
+    <ion-button expand="block" id="msn" style="max-width: 100px;" (click)="valorTotal()">Calcular</ion-button>
+  </div>
+</ion-content>

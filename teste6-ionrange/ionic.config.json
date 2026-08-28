@@ -1,0 +1,7 @@
+{
+  "name": "teste6-ionrange",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
